@@ -1,0 +1,305 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body{
+    margin: 0;
+}
+
+h1{
+    font-size: 2.5rem;
+    text-align: center;
+    
+}
+
+h2{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.dotted-hr{
+    border: dotted 6px white;
+    border-bottom: none;
+    margin: 20px auto;
+    width: 70px;
+}
+a{
+    color: #fff;
+    font-size: 1.2rem;
+    text-decoration: none;
+
+}
+
+p{
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+
+/* for mobile */
+[class*="col-"]{
+    width: 100%;
+}
+
+/* navbar design starts here */
+
+
+.navbar{
+    background-color: rgb(65, 65, 71);
+    padding: 1% 7%;
+    text-align: center;
+    
+}
+
+.navbar::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.navbar h1{
+    color: #fff;
+    margin: 0;
+    padding-top: 10px;
+    
+}
+
+.nav-menu{
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-menu a{
+    background-color:  rgb(65, 65, 71);
+    border-radius: 10px;
+    margin: 7px;
+    padding: 10px ;
+}
+
+.nav-menu a:hover{
+    background-color: rgb(148, 148, 161);
+}
+
+/* navbar design ends here */
+
+
+/* profile design starts from here */
+
+.profile{
+    padding: 130px 10px;
+    position: relative;
+    text-align: center;
+}
+
+.profile .top-weather-icon{
+    position: absolute;
+    right: 60px;
+    top: 10px;
+    transition: transform 2s;
+}
+ 
+.profile .top-weather-icon:hover{
+    transform: rotate(360deg);
+}
+
+.profile-desc h1{
+    font-family: Arial ;
+    font-size: 3rem;
+}
+
+.profile-desc p{
+    color: gray;
+    text-align: center;
+    margin: 0 auto 20px auto;
+    padding-bottom: 10px;
+}
+
+.profile .bottom-weather-icon{
+    position: absolute;
+    left: 60px;
+    bottom: 5px;
+    transition: transform 2s;
+}
+ 
+.profile .bottom-weather-icon:hover{
+    transform: rotate(360deg);
+
+}
+.profile::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+/* profile design end here */
+
+
+/* About me design starts here */
+
+.About-me{
+     background-color: rgb(65, 65, 71);
+     padding: 1% 7%;
+     color: #fff;
+     text-align: center;
+     
+}
+
+.aboutme-image img{
+    border: 5px solid #fff;
+    border-radius: 50%;
+    height: 220px;
+    width: 200px;
+}
+
+.About-me::after{
+    clear: both;
+    display: table;
+    content: '';
+}
+
+.About-me p{
+    text-align: center;
+}
+
+.About-me a{
+    font-size: 1.2rem;
+}
+
+/* About me design ends here */
+
+
+/* professional-experience starts here */
+
+.professional-experience{
+    padding: 1% 0%;
+}
+
+.professional-experience .card{
+    background-color: 5px solid rgb(88, 86, 86)
+    border-radius: 5px;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.card:hover{
+    box-shadow: 0 4px 8px 5px rgb(63, 62, 62);
+}
+
+.professional-experience::after{
+    clear: both;
+    display: table;
+    content: '';
+}
+
+.card-icon{
+    text-align: center;
+    
+}
+
+.card-icon img{
+    margin-top: 20px;
+    width: 100px;
+    
+}
+
+.card-title{
+    background-color: rgb(65, 65, 71);
+    color: #fff;
+}
+/* professional-experience ends here */
+
+
+
+
+/* Acchivment-contact starts from here */
+.acchivment-contact{
+    padding: 1% 3%;
+    background-color: rgb(65, 65, 71);
+    color: #fff;
+}
+
+.acchivment-contact::after{
+    clear: both;
+    display: table;
+    content: '';
+}
+
+.contact{
+    padding: 1% 7%;
+    text-align: center;
+}
+
+
+
+.contact input, textarea{
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    
+    outline: none;
+}
+
+.contact button{
+    border: none;
+    border-radius: 12px;
+    background-color: #38383a;
+    color: #fff;
+    cursor: pointer;
+    padding: 15px;
+    margin: 10px;
+}
+
+
+.contact-links{
+    text-align: center;
+}
+
+.media-buttons .btn{
+ border: none;
+ border-radius: 25px;
+ cursor: pointer;
+ font-size: 32px;
+ padding: 5px;
+ margin: 10px;
+ width: 50px;
+}
+/* Acchivment-contact starts from here */
+
+/* footer starts from here */
+.footer{
+    background-color: rgb(48, 47, 47);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 1 rem;
+}
+
+.footer-menu a{
+    display: block;
+    margin: 15px 0;
+}
+
+.footer-menu a:hover{
+    color: gray;
+}
+
+
+.footer::after{
+    display: table;
+    clear: both;
+    content: '';
+}
+
+.footer-desc{
+    margin-top: 20px;
+}
+/* footer ends from here */
